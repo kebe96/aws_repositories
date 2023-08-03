@@ -10,6 +10,14 @@
       "StackName": "amplify-awsrepositories-dev-100129",
       "StackId": "arn:aws:cloudformation:us-east-1:562041342759:stack/amplify-awsrepositories-dev-100129/f5227280-31d3-11ee-af14-122383804391",
       "AmplifyAppId": "d1zm8u6pqi3spr"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1zm8u6pqi3spr",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
