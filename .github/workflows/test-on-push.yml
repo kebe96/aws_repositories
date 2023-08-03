@@ -2,7 +2,7 @@ name: "RUN TESTS ON PUSH AND DEPLOY"
 on:
   push:
     branches:
-      - main
+      - deployment
 jobs:
     test:
         runs-on: ubuntu-latest
