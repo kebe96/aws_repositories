@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from '../App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/apprendre react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+name: "RUN TEST ON PUSH"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+```
