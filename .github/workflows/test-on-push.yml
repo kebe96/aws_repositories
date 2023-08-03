@@ -1,8 +1,8 @@
-name: "RUN TESTS ON PUSH"
+name: "RUN TESTS ON PUSH AND DEPLOY"
 on:
   push:
     branches:
-      - main
+      - deployment
 jobs:
     test:
         runs-on: ubuntu-latest
@@ -17,5 +17,5 @@ jobs:
             - name: Run tests
               run: npm run test
             - name: Print success message
-              run: echo "Success! all the tests passed , the deployment could be done now"
+              run: amplify publish --yes
 
